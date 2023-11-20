@@ -10,10 +10,7 @@ The nonprofit foundation Alphabet Soup aims to enhance its funding allocation pr
     pip install keras
 
 ## Project Structure:
-### Step 3: Preprocess the Data:
-  + Read in the charity_data.csv to a Pandas DataFrame.
-  + Identify target and feature variables.
-  + Drop unnecessary columns (EIN and NAME).
+### Step 1: Preprocess the Data:
   + Bin rare categorical variables into a new value, 'Other.'
   + Encode categorical variables using pd.get_dummies().
   + Split data into features array (X) and target array (y).
