@@ -11,6 +11,8 @@ The nonprofit foundation Alphabet Soup aims to enhance its funding allocation pr
 
 ## Project Structure:
 ### Step 1: Preprocess the Data:
+The target variable for the model is IS_SUCCESSFUL. This variable represents whether the funding provided by Alphabet Soup was successful (1) or not (0). All the columns except the target variable (IS_SUCCESSFUL) are considered features for the model. 
+  + The columns 'EIN' and 'NAME' are removed from the input data as they are neither targets nor features.
   + Bin rare categorical variables into a new value, 'Other.'
   + Encode categorical variables using pd.get_dummies().
   + Split data into features array (X) and target array (y).
@@ -25,6 +27,7 @@ The nonprofit foundation Alphabet Soup aims to enhance its funding allocation pr
 
 ### Step 3: Optimize the Model:
 Experiment with various optimization strategies:
+![image](https://github.com/ashley-ley/deep-learning-challenge/assets/132225987/b9ce3e98-0216-455b-a52e-26037eeb0c69)
   + Adjust input data by modifying columns, creating more bins, etc.
   + Modify neural network architecture by adding neurons, layers, or changing activation functions.
   + Adjust training parameters such as epochs.
@@ -36,7 +39,7 @@ The initial model yielded promising results with a loss of 0.5562 and an accurac
 
 In contrast, the optimized model results showed a loss of 0.5549 and an accuracy of 72.78%. Despite implementing changes such as adding hidden layers and nodes, as well as adjusting the optimizer, the optimized model performed slightly worse. The accuracy did not surpass 72%, indicating that the optimization efforts did not achieve the target accuracy of higher than 75%.
 
-These findings suggest that further exploration and experimentation may be needed to identify the most effective configurations for improving model performance.
+It seems that there were attempts to optimize the model, including adjusting the number of neurons, adding hidden layers, and changing the optimizer. However, the optimized model performed slightly worse. Further exploration and experimentation may be needed to identify the most effective configurations for improving model performance.
 
 ## Results:
 + Initial Model Accuracy: 73.11%
